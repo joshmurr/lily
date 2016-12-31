@@ -13,7 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/lily" # the subpath of your site, e.g. /blog
 url: "http://joshmurr.github.io" # the base hostname & protocol for your site
 twitter_username: murr 
-github_username: murr 
+github_username: joshmurr 
 
 # Build settings
 sass:
