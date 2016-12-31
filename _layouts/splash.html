@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<script>
+	$(document).ready(function(){
+		$('.name').fadeIn(2000);
+		$('.menu').fadeIn(2000);
+	});
+</script>
+
+<body id="gradient">
+  {% include header.html %}
+  <main>
+  	{{ content }}
+    <!-- {% include footer.html %} -->
+  </main>
+</body>
+
+</html>

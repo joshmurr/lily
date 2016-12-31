@@ -1,0 +1,53 @@
+<!-- <aside style='display:none'>
+    <nav>
+      <ul>
+        {% for page in site.pages %} {% if page.title %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %} {% endfor %}
+        <li><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></li>
+      </ul>
+    </nav>
+</aside> -->
+
+
+<aside>
+  <div id="accordian" style="display:none">
+  <ul>
+    <li>
+      <h3>Art Direction</h3>
+      <ul>
+        {% for page in site.pages %} 
+        {% for t in page.tags %} {% if t == 'adc' %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %} {% endfor %} {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <h3>Production</h3>
+      <ul>
+        {% for page in site.pages %} 
+        {% for t in page.tags %} {% if t == 'production' %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %} {% endfor %} {% endfor %}
+      </ul>
+    </li>
+    <li>
+      <h3>Writing</h3>
+      <ul>
+        {% for page in site.pages %} 
+        {% for t in page.tags %} {% if t == 'writing' %}
+        <li><a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a></li>
+        {% endif %} {% endfor %} {% endfor %}
+      </ul>
+    </li>
+    <!-- <li>
+      <h3><a href="{{ "/blog" | prepend: site.baseurl }}">Blog</a></h3>
+    </li> -->
+  </ul>
+</div>
+</aside>
+
+<header>
+  <!-- Main Title -->
+  <h1 class="name" style="display:none"><a href="{{ site.baseurl }}">{{ site.title }}</a></h1>
+</header>

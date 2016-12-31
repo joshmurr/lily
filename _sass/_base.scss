@@ -1,0 +1,29 @@
+$content-width: 800px;
+
+$main: #FFF;
+
+
+$font-style: Suisse, 'Roboto Condensed', sans-serif;
+$font-color: #FFF;
+$link-color: #FFF;
+$link-hover-color: #AAA;
+$heading-font: Suisse, 'Roboto Condensed', sans-serif;
+$heading-font-color: #FFF;
+$heading-font-size: 1.4em;
+$light: #E7EDF4;
+
+$header:  none; //Main title bar
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Suisse;
+    src:
+        url('/assets/suisse_mono_reg.woff2') format('woff2'),
+}
