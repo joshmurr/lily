@@ -25,5 +25,5 @@ $header:  none; //Main title bar
 @font-face {
     font-family: Suisse;
     src:
-        url('/assets/suisse_mono_reg.woff2') format('woff2'),
+        url('{{ site.baseurl }}/assets/suisse_mono_reg.woff2') format('woff2'),
 }
