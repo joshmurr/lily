@@ -28,10 +28,10 @@
 
 	{% if page.custom_js %}
 	  {% for js_file in page.custom_js %}
-	  	<script src="{{site.baseurl}}"/js/"{{js_file}}".js" type="text/javascript"></script>
+	  	<script src="{{ /js/{{js_file}}.js | prepend: site.baseurl }}" type="text/javascript"></script>
 	  {% endfor %}
 	{% else %}
-		<script src="{{ /js/showall.js" type="text/javascript"></script>
+		<script src="/js/showall.js" type="text/javascript"></script>
 	{% endif %}
 
 
