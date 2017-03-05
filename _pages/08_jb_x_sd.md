@@ -7,7 +7,18 @@ tags: [production, john, booth, sonia, delaunay]
 
 <h2>John Booth x Sonia Delaunay</h2>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/aiFsQ0wusz4" frameborder="0" allowfullscreen></iframe>
+<div class="grid">
+  <div class="grid-sizer"></div>
+  <div class="gutter-sizer"></div>
+  	{% for image in site.static_files %}
+    	{% if image.path contains 'images/production/jbxsd' %}
+      		<div class="grid-item">
+        		<img src="{{ site.baseurl }}{{ image.path }}" alt="image" />
+        		<!-- <p>Here's a little text to go under the image.</p> -->
+      		</div>
+    	{% endif %}
+	{% endfor %}
+</div>
 
 Some text about the image above. Some text about the image above. Some text about the image above. Some text about the image above. 
 

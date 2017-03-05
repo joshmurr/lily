@@ -134,7 +134,14 @@ aside {
     }
 }
 
+p{
+    margin: 20px 0;
+}
 
+iframe {
+    display:block;
+    margin: 20px auto;
+}
 
 
 footer {
@@ -186,7 +193,6 @@ footer {
 
 #accordian {
     position: fixed;
-    top: 120px;
     right: 30px;
     //background: #ffA;
     z-index: 2;
